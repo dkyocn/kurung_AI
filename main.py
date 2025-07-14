@@ -24,7 +24,7 @@ async def test_db():
 
 def select_data(query):
     con = oracledb.connect(user="c##kurung", password="kurung2025",
-                           dsn="localhost:21521/XE")  # DB에 연결 (호스트이름 대신 IP주소 가능)
+                           dsn="localhost:1521/XE")  # DB에 연결 (호스트이름 대신 IP주소 가능)
     cursor = con.cursor()  # 연결된 DB 지시자(커서) 생성
     cursor.execute(query)
     outData = cursor.fetchall()
