@@ -1,8 +1,33 @@
 from fastapi import FastAPI
 import oracledb
 from starlette.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
+from apscheduler.schedulers.background import BackgroundScheduler
+from datetime import datetime
 
-app = FastAPI()
+# 매일 운동 미션
+# ⬇️ 운동 미션 생성 함수 가져오기
+from exercise_recommend_mission import generate_daily_exercise_missions
+
+# ✅ 스케줄러에 등록할 함수
+def schedule_exercise_mission():
+    print(f"[{datetime.now()}] 운동 미션 생성 시작")
+    generate_daily_exercise_missions()
+    print(f"[{datetime.now()}] 운동 미션 생성 완료")
+
+# ✅ FastAPI lifespan 내에 스케줄러 포함
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(schedule_exercise_mission, 'cron', hour=9, minute=0)  # 매일 오전 9시
+    # ✅ 테스트용 (30초마다 실행)
+    # scheduler.add_job(schedule_exercise_mission, 'interval', seconds=10)
+    scheduler.start()
+    yield
+    scheduler.shutdown()
+
+# ✅ FastAPI 앱 정의 (lifespan 포함)
+app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,9 +43,7 @@ async def root():
 @app.get("/db")
 async def test_db():
     returnData = select_data("SELECT * FROM tb_diet")
-
     return returnData
-
 
 def select_data(query):
     con = oracledb.connect(user="c##kurung", password="kurung2025",
@@ -28,6 +51,5 @@ def select_data(query):
     cursor = con.cursor()  # 연결된 DB 지시자(커서) 생성
     cursor.execute(query)
     outData = cursor.fetchall()
-
     con.close()
     return outData
