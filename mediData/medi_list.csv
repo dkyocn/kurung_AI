@@ -1,0 +1,101 @@
+﻿id,name,name_ko,category,company
+1,Acetaminophen,아세트아미노펜,진통·해열제,Johnson & Johnson
+2,Ibuprofen,이부프로펜,NSAID,Advil (Pfizer)
+3,Aspirin,아스피린,항혈소판제,Bayer
+4,Naproxen,나프록센,NSAID,Bayer
+5,Diclofenac,디클로페낙,NSAID,Novartis
+6,Tramadol,트라마돌,중추성 진통제,Grünenthal
+7,Morphine,몰핀,마약성 진통제,Pfizer
+8,Codeine,코데인,마약성 진통제,Pfizer
+9,Amoxicillin,아목시실린,페니실린계 항생제,GSK
+10,Clavulanate,클라불라네이트,B-락타마제 억제제,GSK
+11,Ciprofloxacin,시프로플록사신,퀴놀론계 항생제,Bayer
+12,Levofloxacin,레보플록사신,퀴놀론계 항생제,Daiichi Sankyo
+13,Azithromycin,아지스로마이신,마크롤라이드계 항생제,Pfizer
+14,Clarithromycin,클라리트로마이신,마크롤라이드계 항생제,AbbVie
+15,Doxycycline,독시사이클린,테트라사이클린계 항생제,Pfizer
+16,Metformin,메트포르민,당뇨병 치료제,Merck
+17,Glipizide,글리피지드,설폰요소계,Pfizer
+18,Insulin Glargine,인슐린 글라진,장시간형 인슐린,SANOFI
+19,Empagliflozin,엠파글리플로진,SGLT2 억제제,Boehringer Ingelheim
+20,Liraglutide,리라글루타이드,GLP-1 아날로그,Novo Nordisk
+21,Lisinopril,리시노프릴,ACE 억제제,Merck
+22,Enalapril,에날라프릴,ACE 억제제,Pfizer
+23,Losartan,로사르탄,ARB,Merck
+24,Valsartan,발사르탄,ARB,Novartis
+25,Amlodipine,암로디핀,칼슘채널차단제,Pfizer
+26,Hydrochlorothiazide,히드로클로로티아지드,티아지드 이뇨제,Teva
+27,Furosemide,푸로세미드,고리이뇨제,Sanofi
+28,Atorvastatin,아토르바스타틴,스타틴,Pfizer
+29,Simvastatin,심바스타틴,스타틴,Merck
+30,Rosuvastatin,로수바스타틴,스타틴,AstraZeneca
+31,Warfarin,와파린,항응고제,Bristol-Myers Squibb
+32,Apixaban,아픽사반,항응고제,Bristol-Myers Squibb
+33,Clopidogrel,클로피도그렐,항혈소판제,Sanofi
+34,Ticagrelor,티카그렐러,항혈소판제,AstraZeneca
+35,Omeprazole,오메프라졸,PPI,AZ (AstraZeneca)
+36,Esomeprazole,에스오메프라졸,PPI,AZ (AstraZeneca)
+37,Ranitidine,라니티딘,H2 차단제,GSK
+38,Alprazolam,알프라졸람,벤조디아제핀,Pfizer
+39,Diazepam,디아제팜,벤조디아제핀,Roche
+40,Sertraline,설트랄린,SSRI,Pfizer
+41,Fluoxetine,플루옥세틴,SSRI,Eli Lilly
+42,Amitriptyline,아미트리프틸린,TCA,Novartis
+43,Bupropion,부프로피온,NDRI,GSK
+44,Quetiapine,쿠에티아핀,비정형 항정신병제,AstraZeneca
+45,Olanzapine,올란자핀,비정형 항정신병제,Eli Lilly
+46,Prednisone,프레드니손,경구 스테로이드,Merck
+47,Dexamethasone,덱사메타손,고효능 스테로이드,MSD
+48,Methotrexate,메토트렉세이트,면역억제·항암제,Pfizer
+49,Paclitaxel,파클리탁셀,항암제,BMS
+50,Cyclophosphamide,사이클로포스파미드,항암제,Baxter
+51,Levothyroxine,레보티록신,갑상선호르몬제,AbbVie
+52,Digoxin,디곡신,강심배당체,Novartis
+53,Nitroglycerin,니트로글리세린,협심증 치료제,Pfizer
+54,Sildenafil,실데나필,PDE5 억제제,Pfizer
+55,Finasteride,피나스테리드,5-α 환원효소 억제제,Merck
+56,Allopurinol,알로퓨리놀,통풍 치료제,Teva
+57,Colchicine,콜히친,통풍 치료제,Takeda
+58,Montelukast,몬테루카스트,천식 치료제,Merck
+59,Salbutamol,살부타몰,단시간형 β2 작용제,GSK
+60,Budesonide,부데소나이드,흡입 스테로이드,AstraZeneca
+61,Diphenhydramine,디펜히드라민,항히스타민제,Johnson & Johnson
+62,Loratadine,로라타딘,항히스타민제,Bayer
+63,Hydroxychloroquine,하이드록시클로로퀸,항말라리아·면역억제제,Sanofi
+64,Isoniazid,아이소니아지드,항결핵제,Sanofi
+65,Rifampin,리팜핀,항결핵제,Sanofi
+66,Valproic Acid,발프로산,항경련제,AbbVie
+67,Carbamazepine,카르바마제핀,항경련제,Novartis
+68,Phenytoin,페니토인,항경련제,Pfizer
+69,Gabapentin,가바펜틴,신경병성 통증, Pfizer
+70,Pregabalin,프레가발린,신경병성 통증,Pfizer
+71,Caffeine,카페인,중추흥분제,Generic
+72,Nicotine,니코틴,금연보조제,Generic
+73,Ethanol,에탄올,기타,Generic
+74,Vitamin B12,비타민 B12,비타민,Merck
+75,Folic Acid,엽산,비타민,Bayer
+76,Iron(FeSO4),철분,영양제,Teva
+77,Zinc Gluconate,아연,영양제, Pfizer
+78,Magnesium Oxide,산화마그네슘,영양제,Daewoong
+79,Calcium Carbonate,탄산칼슘,영양제,NOW Foods
+80,Omega-3,오메가3,건강보조제,Nordic Naturals
+81,Probiotic,프로바이오틱스,건강보조제,Danone
+82,St. John’s Wort,세인트존스워트,한방·보충제,Generic
+83,Ginkgo Biloba,은행잎,건강보조제,Nature's Way
+84,Echinacea,에키네시아,한방·보충제,Now
+85,Melatonin,멜라토닌,수면 보조제,NatureMade
+86,Glucosamine,글루코사민,관절 보조제,Move Free
+87,Chondroitin,콘드로이틴,관절 보조제,Now
+88,CoQ10,코엔자임Q10,항산화 보조제,Kaneka
+89,Curcumin,커큐민,한방·보충제,Swanson
+90,Resveratrol,레스베라트롤,항산화 보조제,Now
+91,L-Carnitine,엘카르니틴,영양제,Optimum Nutrition
+92,Creatine,크레아틴,운동 보조제,Optimum Nutrition
+93,Beta-Alanine,베타알라닌,운동 보조제,Cellucor
+94,Arginine,아르기닌,운동 보조제,Now
+95,Glutamine,글루타민,운동 보조제,Optimum Nutrition
+96,Spirulina,스피루리나,슈퍼푸드,Now
+97,Ashwagandha,아슈와간다,한방·보충제,Himalaya
+98,Maca Root,마카,한방·보충제,Now
+99,GABA,가바,수면·이완 보조제,Now
+100,5-HTP,5-HTP,수면·세로토닌,Twinlab
