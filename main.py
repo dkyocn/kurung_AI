@@ -17,8 +17,8 @@ from typing import Optional
 app = FastAPI()
 
 # JWT 설정
-SECRET_KEY = "your-secret-key-here"  # 실제 운영환경에서는 환경변수로 관리
-ALGORITHM = "HS256"
+SECRET_KEY = "vrDt6Hhffv9gPPEEHDBVhxY4W+gf//bxDgVljRr/+8z1ZxqEdgTmDDZ/UIquJuWQdZmJ8mz/DuzLF/pmcMFaqw=="
+ALGORITHM = "HS512"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 # 비밀번호 해싱 (임시로 제거)
@@ -35,15 +35,21 @@ app.add_middleware(
 )
 
 # JWT 토큰 생성 함수
-def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
+def create_token(data: dict, expires_delta: Optional[timedelta], category: str) -> str:
+    """
+    accessToken / refreshToken 모두 생성 가능
+    :param data: 사용자 정보 (sub, userUuid, name, role 등)
+    :param expires_delta: 토큰 만료 시간 (ex. 30분 or 24시간)
+    :param category: "access" 또는 "refresh"
+    :return: 인코딩된 JWT 문자열
+    """
     to_encode = data.copy()
-    if expires_delta:
-        expire = datetime.utcnow() + expires_delta
-    else:
-        expire = datetime.utcnow() + timedelta(minutes=15)
-    to_encode.update({"exp": expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-    return encoded_jwt
+    expire = datetime.utcnow() + expires_delta
+    to_encode.update({
+        "exp": expire,
+        "category": category
+    })
+    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
 # JWT 토큰 검증 함수
 def verify_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
@@ -68,8 +74,7 @@ async def test_db():
 # Face ID 등록 API
 @app.post("/register-face")
 async def register_face(
-    username: str = Form(...),
-    password: str = Form(...),
+    user_id: str = Form(...),
     face_image: UploadFile = File(...)
 ):
     try:
@@ -77,149 +82,141 @@ async def register_face(
         image_data = await face_image.read()
         image = Image.open(io.BytesIO(image_data))
         image_array = np.array(image)
-        
+
         # 얼굴 인코딩 추출
         face_encodings = face_recognition.face_encodings(image_array)
-        
+
         if not face_encodings:
             raise HTTPException(status_code=400, detail="얼굴을 찾을 수 없습니다.")
-        
+
         face_encoding = face_encodings[0]
-        
+
         # 벡터 데이터 압축 (소수점 4자리로 제한)
         compressed_encoding = [round(float(x), 4) for x in face_encoding]
         face_encoding_str = json.dumps(compressed_encoding)
-        
+
         # 데이터 크기 확인
         if len(face_encoding_str) > 900:  # 안전 마진
             # 더 강력한 압축 (소수점 3자리)
             compressed_encoding = [round(float(x), 3) for x in face_encoding]
             face_encoding_str = json.dumps(compressed_encoding)
             print(f"벡터 데이터 압축됨: {len(face_encoding_str)} 문자")
-        
+
         # DB에 사용자 정보 저장
         try:
             con = oracledb.connect(user="c##kurung", password="kurung2025", dsn="localhost:1521/XE")
             cursor = con.cursor()
-            
+
             # 기존 사용자 확인
             cursor.execute("""
                 SELECT USER_ID, USER_FACELOGIN_YN FROM TB_USER WHERE USER_ID = :user_id
-            """, {'user_id': username})
-            
+            """, {'user_id': user_id})
+
             user_exists = cursor.fetchone()
-            
+
             if user_exists:
                 # 기존 사용자 - Face ID 정보 업데이트
                 cursor.execute("""
                     UPDATE TB_USER 
                     SET USER_FACELOGIN_YN = 1, 
-                        USER_FACELOGIN_REF = :face_encoding,
-                        USER_PWD = :password
+                        USER_FACELOGIN_REF = :face_encoding
                     WHERE USER_ID = :user_id
                 """, {
-                    'user_id': username,
-                    'password': password,
+                    'user_id': user_id,
                     'face_encoding': face_encoding_str
                 })
-                print(f"기존 사용자 {username}의 Face ID 정보가 업데이트되었습니다.")
-            else:
-                # 새 사용자 등록 - TB_USER 테이블 구조에 맞춤
-                cursor.execute("""
-                    INSERT INTO TB_USER (
-                        USER_UUID, USER_ID, USER_FACELOGIN_YN, USER_FACELOGIN_REF, 
-                        USER_PWD, USER_NICK, USER_GENDER, USER_AGE, 
-                        USER_KEY, USER_PATH, PROFILE_IMG, IS_ACTIVE, ADMIN_YN, USER_REFRESH_TOKEN
-                    ) VALUES (
-                        :user_uuid, :user_id, 1, :face_encoding,
-                        :password, :nickname, 'MALE', TO_DATE('1990-01-01', 'YYYY-MM-DD'),
-                        NULL, 'NORMAL', NULL, 1, 0, NULL
-                    )
-                """, {
-                    'user_uuid': f"FACE_{int(datetime.now().timestamp())}",
-                    'user_id': username,
-                    'password': password,
-                    'face_encoding': face_encoding_str,
-                    'nickname': username
-                })
-                print(f"새 사용자 {username}이 등록되었습니다.")
-            
+                print(f"기존 사용자 {user_id}의 Face ID 정보가 업데이트되었습니다.")
+
             con.commit()
             con.close()
-            
-            return {"message": "Face ID 등록이 완료되었습니다.", "username": username}
-            
+
+            return {"message": "Face ID 등록이 완료되었습니다.", "user_id": user_id}
+
         except Exception as db_error:
             print(f"DB 오류: {str(db_error)}")
             raise HTTPException(status_code=500, detail=f"데이터베이스 오류: {str(db_error)}")
-        
+
     except Exception as e:
         print(f"Face ID 등록 오류: {str(e)}")
         raise HTTPException(status_code=500, detail=f"등록 중 오류가 발생했습니다: {str(e)}")
 
 # Face ID 로그인 API
 @app.post("/login-face")
-async def login_face(face_image: UploadFile = File(...)):
+async def login_face(
+    user_id: str = Form(...),
+    face_image: UploadFile = File(...)
+):
     try:
-        # 이미지 읽기
+        # 1. 이미지에서 얼굴 인코딩 추출
         image_data = await face_image.read()
         image = Image.open(io.BytesIO(image_data))
         image_array = np.array(image)
-        
-        # 얼굴 인코딩 추출
+
         face_encodings = face_recognition.face_encodings(image_array)
-        
         if not face_encodings:
             raise HTTPException(status_code=400, detail="얼굴을 찾을 수 없습니다.")
-        
         current_face_encoding = face_encodings[0]
-        
-        # DB에서 Face ID가 활성화된 사용자들의 얼굴 인코딩 가져오기
-        try:
-            con = oracledb.connect(user="c##kurung", password="kurung2025", dsn="localhost:1521/XE")
+
+        # 2. DB에서 사용자 얼굴 벡터 가져오기
+        with oracledb.connect(user="c##kurung", password="kurung2025", dsn="localhost:1521/XE") as con:
             cursor = con.cursor()
-            
             cursor.execute("""
-                SELECT USER_ID, USER_FACELOGIN_REF 
-                FROM TB_USER 
-                WHERE USER_FACELOGIN_YN = 1 AND USER_FACELOGIN_REF IS NOT NULL
-            """)
-            users = cursor.fetchall()
-            con.close()
-            
-            # 얼굴 인식 비교
-            for user in users:
-                user_id, stored_face_encoding_json = user
-                
-                if stored_face_encoding_json:
-                    stored_face_encoding = np.array(json.loads(stored_face_encoding_json))
-                    
-                    # 얼굴 유사도 계산
-                    face_distance = face_recognition.face_distance([stored_face_encoding], current_face_encoding)[0]
-                    
-                    # 임계값 0.6 이하일 때 인식 성공
-                    if face_distance <= 0.6:
-                        # JWT 토큰 생성
-                        access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-                        access_token = create_access_token(
-                            data={"sub": user_id}, expires_delta=access_token_expires
-                        )
-                        
-                        return {
-                            "message": "Face ID 로그인 성공!",
-                            "username": user_id,
-                            "access_token": access_token,
-                            "token_type": "bearer"
-                        }
-            
+                SELECT USER_ID, USER_UUID, USER_NICK, USER_FACELOGIN_REF
+                FROM TB_USER
+                WHERE USER_FACELOGIN_YN = 1
+                  AND USER_FACELOGIN_REF IS NOT NULL
+                  AND USER_ID = :user_id
+            """, {'user_id': user_id})
+
+
+            user_row = cursor.fetchone()
+
+        if not user_row:
+            raise HTTPException(status_code=404, detail="등록된 Face ID 사용자가 아닙니다.")
+
+        db_user_id, user_uuid, user_name, stored_face_encoding_json = user_row
+        stored_face_encoding = np.array(json.loads(stored_face_encoding_json))
+
+        # 3. 얼굴 유사도 비교
+        face_distance = face_recognition.face_distance([stored_face_encoding], current_face_encoding)[0]
+        if face_distance > 0.6:
             raise HTTPException(status_code=401, detail="등록되지 않은 얼굴입니다.")
-            
-        except Exception as db_error:
-            print(f"DB 오류: {str(db_error)}")
-            raise HTTPException(status_code=500, detail=f"데이터베이스 오류: {str(db_error)}")
-        
+
+        # 4. 토큰 생성
+        access_token = create_token(
+            data={
+                "sub": db_user_id,
+                "userUuid": user_uuid,
+                "name": user_name,
+                "role": "USER"
+            },
+            expires_delta=timedelta(minutes=30),
+            category="access"
+        )
+
+        refresh_token = create_token(
+            data={
+                "sub": db_user_id,
+                "userUuid": user_uuid,
+                "name": user_name,
+                "role": "USER"
+            },
+            expires_delta=timedelta(hours=24),
+            category="refresh"
+        )
+
+        # 5. 응답
+        return {
+            "message": "Face ID 로그인 성공!",
+            "username": db_user_id,
+            "access_token": access_token,
+            "refresh_token": refresh_token,
+            "token_type": "bearer"
+        }
+
+    except HTTPException as e:
+        raise e
     except Exception as e:
-        print(f"Face ID 로그인 오류: {str(e)}")
         raise HTTPException(status_code=500, detail=f"로그인 중 오류가 발생했습니다: {str(e)}")
 
 # 보호된 엔드포인트 (로그인 필요)
