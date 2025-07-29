@@ -1,0 +1,101 @@
+supp_id,supp_name,supp_name_ko,category,company
+1001,Vitamin D3,비타민 D3 (콜레칼시페롤),비타민,NOW Foods
+1002,Vitamin C,비타민 C (아스코르브산),비타민,Nature's Bounty
+1003,Vitamin K2,비타민 K2,비타민,Thorne
+1004,Vitamin B12,비타민 B12 (코발라민),비타민,Jarrow Formulas
+1005,Folic Acid,엽산,비타민,Nature Made
+1006,Calcium Citrate,구연산칼슘,미네랄,Kirkland Signature
+1007,Magnesium,마그네슘,미네랄,Doctor's Best
+1008,Zinc,아연,미네랄,NOW Foods
+1009,Iron,철분,미네랄,Solgar
+1010,Selenium,셀레늄,미네랄,Pure Encapsulations
+1011,Omega-3 Fish Oil,오메가-3 어유,오메가-3,Nordic Naturals
+1012,Cod Liver Oil,대구간유,오메가-3,Carlson
+1013,Coenzyme Q10,코엔자임 Q10,엔자임 보조제,Qunol
+1014,Probiotics,프로바이오틱스,프로바이오틱스,Garden of Life
+1015,Multivitamin (Men),남성용 종합비타민,종합비타민,Centrum
+1016,Multivitamin (Women),여성용 종합비타민,종합비타민,Garden of Life
+1017,Collagen,콜라겐 펩타이드,단백질/콜라겐,Vital Proteins
+1018,Curcumin (Turmeric),커큐민 (강황),허브/항염,Gaia Herbs
+1019,Glucosamine,글루코사민,관절보호,Osteo Bi-Flex
+1020,Chondroitin,콘드로이틴,관절보호,Nature's Bounty
+1021,SAM-e,에스에이엠-이,관절보호,Doctor's Best
+1022,Melatonin,멜라토닌,수면보조,Natrol
+1023,Magnesium Glycinate,마그네슘 글리시네이트,미네랄,Pure Encapsulations
+1024,Fiber (Psyllium),차전자피 식이섬유,식이섬유,Metamucil
+1025,Green Tea Extract,녹차 추출물,항산화,Nature's Way
+1026,Ginkgo Biloba,은행잎 (Ginkgo Biloba),허브,Puritan's Pride
+1027,Ashwagandha,아슈와간다,허브/스트레스,KSM-66
+1028,CoQ10 Ubiquinol,유비퀴놀 Q10,엔자임 보조제,Kaneka
+1029,Probiotic + Prebiotic,프로바이오틱스 + 프리바이오틱스,프로바이오틱스,Renew Life
+1030,Calcium + Vitamin D,칼슘 + 비타민 D,미네랄,Caltrate
+1031,Collagen Type II,콜라겐 타입 II,단백질/콜라겐,Doctor's Best
+1032,Lutein,루테인,항산화,NOW Foods
+1033,Zeaxanthin,제아잔틴,항산화,Solaray
+1034,Astaxanthin,아스타잔틴,항산화,Swanson
+1035,Milk Thistle,밀크시슬,간 건강,Nature's Bounty
+1036,Saw Palmetto,쏘팔메토,허브,NOW Foods
+1037,Elderberry,엘더베리,면역,Gaia Herbs
+1038,Garlic Extract,마늘 추출물,허브,Kyolic
+1039,N-Acetyl Cysteine,N-아세틸시스테인,항산화,Jarrow Formulas
+1040,Alpha Lipoic Acid,알파리포산,항산화,Doctor's Best
+1041,Biotin,비오틴,비타민,Nature's Bounty
+1042,Chromium Picolinate,크롬 피콜리네이트,미네랄,Solgar
+1043,Potassium Citrate,구연산칼륨,미네랄,NOW Foods
+1044,Vitamin A,비타민 A,비타민,Solgar
+1045,Vitamin E,비타민 E,비타민,Nature Made
+1046,Vitamin K1,비타민 K1,비타민,Thorne
+1047,Inositol,이노시톨,비타민유사,NOW Foods
+1048,Resveratrol,레스베라트롤,항산화,Reserveage
+1049,Chlorella,클로렐라,슈퍼푸드,Sun Chlorella
+1050,Spirulina,스피루리나,슈퍼푸드,NOW Foods
+1051,SAMe,에스에이엠이,메틸화,Doctor's Best
+1052,L-Theanine,L-테아닌,스트레스,Sunshine Naturals
+1053,5-HTP,5-HTP,수면·세로토닌,Twinlab
+1054,GABA,가바,이완,NOW Foods
+1055,Rhodiola,로디오라,스트레스,Nature's Way
+1056,Panax Ginseng,홍삼,허브,CheongKwanJang
+1057,Maca,마카,허브,Navitas
+1058,Beta-Glucan,베타글루칸,면역,Solgar
+1059,Glutathione,글루타치온,항산화,Jarrow Formulas
+1060,L-Arginine,L-아르기닌,아미노산,Optimum Nutrition
+1061,L-Citrulline,L-시트룰린,아미노산,MuscleTech
+1062,BCAA,분지쇄사슬 아미노산,아미노산,Scivation
+1063,Whey Protein,웨이 프로틴,단백질,Optimum Nutrition
+1064,Casein Protein,카제인 단백질,단백질,Dymatize
+1065,Creatine Monohydrate,크레아틴 모노하이드레이트,운동 보조제,Cellucor
+1066,Beta-Alanine,베타알라닌,운동 보조제,Cellucor
+1067,Electrolyte Powder,전해질 파우더,미네랄,Ultima Replenisher
+1068,MSM,MSM (메틸설포닐메탄),관절보호,Doctor's Best
+1069,Hyaluronic Acid,히알루론산,관절/피부,NOW Foods
+1070,Bone Broth Protein,본 브로스 프로틴,단백질,Ancient Nutrition
+1071,Turmeric,강황,허브,Gaia Herbs
+1072,Peppermint Oil,페퍼민트 오일,소화,NOW Foods
+1073,Ginger Root,생강 뿌리,소화,Solgar
+1074,Apple Cider Vinegar,사과 식초,소화,Bragg
+1075,Quercetin,퀘르세틴,항산화,Doctor's Best
+1076,Echinacea,에키네시아,면역,NOW Foods
+1077,Bromelain,브로멜라인,소화,Swanson
+1078,Saw Palmetto Extract,쏘팔메토 추출물,남성 건강,Nature's Bounty
+1079,Lycopene,라이코펜,항산화,Solgar
+1080,Pycnogenol,피크노제놀,항산화,NOW Foods
+1081,Evening Primrose Oil,달맞이꽃 종자유,여성 건강,NOW Foods
+1082,Garlic Oil,마늘 오일,면역,Kyolic
+1083,Luteolin,루테올린,항염,Swanson
+1084,DHA,디에이치에이,오메가-3,Nordic Naturals
+1085,CLA,공액리놀렌산,체지방,NatureWise
+1086,Resveratrol Plus,레스베라트롤 플러스,항산화,NOW Foods
+1087,Bee Pollen,비폴렌,슈퍼푸드,Y.S. Eco
+1088,Propolis,프로폴리스,면역,Y.S. Eco
+1089,Spirulina Pacifica,스피루리나 퍼시피카,슈퍼푸드,Nutrex Hawaii
+1090,Acerola Cherry,아세로라 체리,비타민,Carlson
+1091,Silica,실리카,미네랄,Hubner
+1092,Collagen Gummies,콜라겐 구미,피부,Nature Made
+1093,EPA,이에이피에이,오메가-3,Carlson
+1094,L-Tyrosine,L-티로신,아미노산,NOW Foods
+1095,NAD+,NAD+ 부스터,항노화,Tru Niagen
+1096,Spermidine,스퍼미딘,항노화,Oxford Healthspan
+1097,Astaxanthin Complex,아스타잔틴 콤플렉스,항산화,Hawaiian
+1098,Shilajit,실라짓,허브,Pure Himalayan
+1099,Tongkat Ali,통캇알리,남성 건강,NOW Foods
+1100,Black Cohosh,블랙 코호시,여성 건강,Nature's Way

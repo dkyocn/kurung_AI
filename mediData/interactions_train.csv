@@ -1,0 +1,251 @@
+﻿id1,id2,level,description
+L-Carnitine,Levofloxacin,Low,경미한 영향
+Apixaban,Metformin,Low,경미한 영향
+Iron(FeSO4),Levofloxacin,Moderate,경미한 부작용
+Clopidogrel,Finasteride,Low,경미한 영향
+CoQ10,Prednisone,Moderate,일시적 증상 발생
+Diphenhydramine,Valsartan,Low,동시 복용 가능
+St. John’s Wort,Valproic Acid,High,출혈 위험 증가
+Ginkgo Biloba,Montelukast,Moderate,경미한 부작용
+Empagliflozin,Morphine,High,독성 상승
+Loratadine,Omega-3,Low,부작용 가능성 낮음
+Creatine,Pregabalin,Moderate,간 효소 변화
+Insulin Glargine,Olanzapine,High,독성 상승
+Acetaminophen,Omega-3,Moderate,경미한 부작용
+Echinacea,Ethanol,Moderate,약효 변화 가능
+Clarithromycin,Sildenafil,High,출혈 위험 증가
+Lisinopril,Quetiapine,High,대사 억제
+Calcium Carbonate,Omeprazole,Moderate,약효 변화 가능
+Iron(FeSO4),Spirulina,Low,동시 복용 가능
+Amitriptyline,Ibuprofen,High,효과 감소
+Isoniazid,Maca Root,Moderate,일시적 증상 발생
+Clopidogrel,Iron(FeSO4),Moderate,일시적 증상 발생
+Amlodipine,Glucosamine,Moderate,간 효소 변화
+Allopurinol,Resveratrol,Moderate,효과 지연
+Esomeprazole,Maca Root,Low,동시 복용 가능
+Allopurinol,Enalapril,Moderate,간 효소 변화
+Methotrexate,Zinc Gluconate,Moderate,약효 변화 가능
+Nitroglycerin,Quetiapine,High,심각한 부작용 가능성
+Naproxen,Omega-3,High,출혈 위험 증가
+Glucosamine,Metformin,High,독성 상승
+Apixaban,Diclofenac,Low,경미한 영향
+Bupropion,Glucosamine,Moderate,경미한 부작용
+L-Carnitine,Salbutamol,Moderate,약효 변화 가능
+Apixaban,Ginkgo Biloba,High,출혈 위험 증가
+Arginine,Aspirin,Low,경미한 영향
+Ginkgo Biloba,Ibuprofen,High,대사 억제
+Azithromycin,CoQ10,Low,상호작용 없음
+Atorvastatin,Diphenhydramine,High,심각한 부작용 가능성
+Esomeprazole,Glipizide,Moderate,경미한 부작용
+Morphine,Ticagrelor,Low,경미한 영향
+Insulin Glargine,Methotrexate,Moderate,간 효소 변화
+Carbamazepine,Pregabalin,Moderate,간 효소 변화
+Ashwagandha,Echinacea,Low,동시 복용 가능
+Caffeine,Vitamin B12,Moderate,경미한 부작용
+L-Carnitine,Loratadine,Moderate,간 효소 변화
+Metformin,Sildenafil,Low,상호작용 없음
+Budesonide,Glipizide,High,효과 감소
+Arginine,Doxycycline,High,효과 감소
+Furosemide,Valsartan,Moderate,약효 변화 가능
+Beta-Alanine,Iron(FeSO4),Low,경미한 영향
+Cyclophosphamide,Omega-3,Moderate,약효 변화 가능
+Acetaminophen,Diclofenac,High,대사 억제
+Allopurinol,Doxycycline,Moderate,효과 지연
+Levothyroxine,Nitroglycerin,Low,부작용 가능성 낮음
+Cyclophosphamide,Spirulina,Low,부작용 가능성 낮음
+Digoxin,Resveratrol,Moderate,경미한 부작용
+Furosemide,Ginkgo Biloba,High,심각한 부작용 가능성
+Levofloxacin,Sildenafil,Moderate,경미한 부작용
+Ciprofloxacin,Phenytoin,High,심각한 부작용 가능성
+Salbutamol,Tramadol,Moderate,간 효소 변화
+Iron(FeSO4),Ranitidine,Low,상호작용 없음
+Esomeprazole,Insulin Glargine,Moderate,약효 변화 가능
+Clopidogrel,St. John’s Wort,High,심각한 부작용 가능성
+Chondroitin,Glucosamine,Low,상호작용 없음
+CoQ10,Pregabalin,High,심각한 부작용 가능성
+Budesonide,Ranitidine,High,효과 감소
+Magnesium Oxide,Prednisone,Low,부작용 가능성 낮음
+Tramadol,Zinc Gluconate,Low,상호작용 없음
+Losartan,Probiotic,High,심각한 부작용 가능성
+Amlodipine,Furosemide,Low,부작용 가능성 낮음
+Amoxicillin,Pregabalin,Moderate,일시적 증상 발생
+Aspirin,Clarithromycin,Moderate,일시적 증상 발생
+Arginine,Creatine,Moderate,효과 지연
+CoQ10,Creatine,Low,경미한 영향
+Aspirin,Ethanol,Moderate,효과 지연
+Curcumin,Zinc Gluconate,High,심각한 부작용 가능성
+Creatine,Warfarin,Low,부작용 가능성 낮음
+Curcumin,Esomeprazole,High,효과 감소
+Gabapentin,Zinc Gluconate,Low,경미한 영향
+Doxycycline,Nitroglycerin,High,대사 억제
+Melatonin,Metformin,High,출혈 위험 증가
+Liraglutide,Omega-3,High,출혈 위험 증가
+Caffeine,Colchicine,Moderate,일시적 증상 발생
+Losartan,Warfarin,Low,동시 복용 가능
+Probiotic,Valsartan,High,대사 억제
+Naproxen,Prednisone,High,심각한 부작용 가능성
+Digoxin,GABA,High,심각한 부작용 가능성
+Rosuvastatin,Sertraline,Moderate,약효 변화 가능
+5-HTP,Diazepam,Moderate,일시적 증상 발생
+Dexamethasone,Sertraline,Moderate,경미한 부작용
+Alprazolam,Olanzapine,High,독성 상승
+Aspirin,Creatine,Low,부작용 가능성 낮음
+Arginine,Azithromycin,Moderate,일시적 증상 발생
+Aspirin,Loratadine,High,독성 상승
+Lisinopril,Methotrexate,High,심각한 부작용 가능성
+Amoxicillin,Vitamin B12,High,대사 억제
+Clavulanate,Sertraline,High,대사 억제
+Atorvastatin,Enalapril,Low,경미한 영향
+Prednisone,Vitamin B12,High,독성 상승
+Atorvastatin,Carbamazepine,Low,동시 복용 가능
+Apixaban,Olanzapine,Moderate,간 효소 변화
+Vitamin D3,Calcium Citrate,Low,흡수 최적화를 위해 시간 차 복용 권장
+Vitamin D3,Magnesium,Low, 뼈 건강에 시너지 (특별한 부작용 없음)
+Vitamin D3,Vitamin K2,Low,칼슘 대사 균형 위해 함께 복용
+Vitamin D3,Omega-3 Fish Oil,Low,지용성 흡수 향상
+Vitamin D3,Vitamin A,Moderate,지용성 비타민 축적 주의
+Vitamin C,Iron,High,철 흡수 급증으로 위장 불편 가능
+Vitamin C,Zinc,Moderate,면역 증강 목적 병용 흔함
+Vitamin C,Magnesium,Low,특이 상호작용 보고 없음
+Vitamin C,Vitamin E,Low,항산화 시너지
+Vitamin C,Resveratrol,Low,항산화 효과 상승
+Magnesium,Zinc,Low,미네랄 간 흡수 경쟁 경미
+Magnesium,Calcium Citrate,Moderate,고용량 병용 시 설사 위험
+Magnesium,Iron,Low,경미한 흡수 지연 가능
+Magnesium,Fiber (Psyllium),Moderate,섬유소가 미네랄 흡수 저해
+Magnesium,Biotin,Low,특이 상호작용 보고 없음
+Calcium Citrate,Iron,Moderate,철 흡수 감소
+Calcium Citrate,Vitamin K2,Low,골밀도 보조 목적 병용
+Calcium Citrate,Vitamin A,Low,특이 상호작용 없음
+Omega-3 Fish Oil,Vitamin E,Moderate,공동 항응고 효과로 멍 증가 가능
+Omega-3 Fish Oil,Coenzyme Q10,Low,심혈관 시너지
+Omega-3 Fish Oil,Curcumin (Turmeric),Moderate,경미한 항응고 효과 상승
+Omega-3 Fish Oil,Garlic Extract,High,출혈 위험 증가
+Coenzyme Q10,Resveratrol,Low,항산화 효과 상승
+Coenzyme Q10,Vitamin E,Moderate,지용성 항산화제 축적 주의
+Coenzyme Q10,Alpha Lipoic Acid,Low,대사 시너지
+Probiotics,Fiber (Psyllium),Low,장 건강 증진
+Probiotics,Probiotic + Prebiotic,Low,균주 다양성 증가
+Probiotics,Green Tea Extract,Low,특이 상호작용 없음
+Collagen,Vitamin C,Low,콜라겐 합성 촉진
+Collagen Type II,Glucosamine,Low,관절 건강 시너지
+Glucosamine,Chondroitin,Low,관절 통증 완화 목적 병용 흔함
+MSM,Glucosamine,Low,관절 시너지 효과
+MSM,Chondroitin,Low,특이 상호작용 없음
+Zinc,Iron,Moderate,미네랄 흡수 경쟁
+Zinc,Selenium,Low,미량원소 병용 안전
+Selenium,Vitamin E,Moderate,항산화제 축적 주의
+Selenium,Omega-3 Fish Oil,Low,특이 상호작용 없음
+Lutein,Zeaxanthin,Low,눈 건강 시너지
+Astaxanthin,Lutein,Low,항산화 상승
+Astaxanthin,Zeaxanthin,Low,특이 상호작용 없음
+Milk Thistle,Alpha Lipoic Acid,Low,간 해독 보조
+Milk Thistle,N-Acetyl Cysteine,Low,간 보호 시너지
+Elderberry,Vitamin C,Low,면역 강화 목적 병용
+Elderberry,Zinc,Moderate,위장 자극 가능
+Garlic Extract,Turmeric,Moderate,경미한 항응고 증가
+Turmeric,Ginger Root,Moderate,위장 불편 가능
+Green Tea Extract,Quercetin,Low,항산화 상승
+Resveratrol,Curcumin (Turmeric),Low,염증 억제 시너지
+SAM-e,Folic Acid,Low,메틸화 경로 보조
+Ashwagandha,L-Theanine,Low,스트레스 완화 강화
+Warfarin,Vitamin K1,High,항응고 효과 상쇄
+Warfarin,Vitamin K2,High,항응고 효과 상쇄
+Warfarin,Vitamin D3,Moderate,칼슘 대사 변화로 INR 변동 가능
+Warfarin,Omega-3 Fish Oil,High,출혈 위험 증가
+Warfarin,Ginkgo Biloba,High,심각한 출혈 위험
+Warfarin,Garlic Extract,High,출혈 위험 증가
+Warfarin,Curcumin (Turmeric),High,항응고 상승 효과
+Warfarin,CoQ10,Moderate,와파린 효과 감소 가능
+Warfarin,St. John’s Wort,High,효소 유도로 INR 감소
+Warfarin,Panax Ginseng,High,Ginseng이 INR 감소
+Warfarin,N-Acetyl Cysteine,Moderate,INR 변동 보고
+Warfarin,Glucosamine,Moderate,출혈 경향 보고
+Warfarin,Chondroitin,Moderate,출혈 경향 보고
+Warfarin,Vitamin C,Low,고용량 시 INR 영향 경미
+Warfarin,Beta-Glucan,Low,특이 상호작용 없음
+Warfarin,Magnesium,Low,특이 상호작용 없음
+Warfarin,Melatonin,Low,특이 상호작용 없음
+Warfarin,Probiotics,Low,특이 상호작용 없음
+Warfarin,Evening Primrose Oil,High,출혈 위험
+Warfarin,Ginger Root,High,항응고 효과 증가
+Aspirin,Omega-3 Fish Oil,High,출혈 위험
+Aspirin,Vitamin E,High,혈소판 억제 시너지
+Aspirin,Ginkgo Biloba,High,출혈 위험 증가
+Aspirin,Garlic Extract,High,출혈 위험 증가
+Aspirin,Curcumin (Turmeric),High,항응고 상승
+Aspirin,N-Acetyl Cysteine,Moderate,위장 장애 증가
+Aspirin,Resveratrol,Moderate,혈소판 억제 시너지
+Aspirin,Vitamin C,Low,특이 상호작용 없음
+Aspirin,Vitamin K1,Moderate,응고 인자 영향
+Aspirin,Probiotics,Low,위장 보호 효과
+Aspirin,Collagen Type II,Low,특이 상호작용 없음
+Aspirin,Iron,Moderate,위장 출혈 위험 상승
+Ibuprofen,Omega-3 Fish Oil,High,출혈 및 위장 장애
+Ibuprofen,Quercetin,Moderate,약효 변동 가능성
+Ibuprofen,Curcumin (Turmeric),Moderate,위 점막 자극
+Ibuprofen,Ginger Root,Moderate,위 점막 자극
+Ibuprofen,Garlic Extract,High,출혈 위험 증가
+Ibuprofen,Magnesium,Low,위장 흡수 지연
+Ibuprofen,N-Acetyl Cysteine,Low,간 보호 효과 보고
+Ibuprofen,Vitamin C,Low,특이 상호작용 없음
+Ibuprofen,Ginkgo Biloba,High,출혈 위험 증가
+Ibuprofen,St. John’s Wort,Moderate,효소 유도에 의한 약효 저하
+Omeprazole,Magnesium,Moderate,저마그네슘혈증 위험
+Omeprazole,Iron,Moderate,철 흡수 저해
+Omeprazole,Vitamin B12,Moderate,장기 복용 시 결핍
+Omeprazole,Calcium Citrate,Low,흡수 증진 목적 병용
+Omeprazole,Vitamin D3,Low,특이 상호작용 없음
+Omeprazole,Probiotics,Low,장내 미생물 보호
+Atorvastatin,Coenzyme Q10,Low,스타틴 유발 근통 완화
+Atorvastatin,Vitamin D3,Low,특이 상호작용 없음
+Atorvastatin,Turmeric,Moderate,CYP3A4 억제로 농도 상승
+Atorvastatin,Omega-3 Fish Oil,Low,중성지방 개선 시너지
+Atorvastatin,Vitamin E,Low,항산화 보조
+Atorvastatin,Garlic Extract,Moderate,근육통 가능성
+Simvastatin,Coenzyme Q10,Low,근육통 완화
+Simvastatin,Vitamin D3,Low,특이 상호작용 없음
+Simvastatin,Omega-3 Fish Oil,Low,지질 개선 시너지
+Simvastatin,Curcumin (Turmeric),Moderate,CYP3A4 억제
+Simvastatin,Resveratrol,Low,항산화 보조
+Simvastatin,Magnesium,Low,근육 경련 완화
+Digoxin,St. John’s Wort,High,효능 감소
+Digoxin,Panax Ginseng,Moderate,혈중 농도 변동
+Digoxin,Magnesium,Moderate,부정맥 위험
+Digoxin,Calcium Citrate,High,고칼슘혈증 독성
+Digoxin,Fiber (Psyllium),Moderate,흡수 감소
+Digoxin,Probiotics,Low,특이 상호작용 없음
+Levothyroxine,Calcium Citrate,High,흡수 저해
+Levothyroxine,Iron,High,흡수 저해
+Levothyroxine,Magnesium Oxide,Moderate,흡수 저해
+Levothyroxine,Calcium + Vitamin D,High,흡수 저해
+Levothyroxine,Fiber (Psyllium),High,흡수 저해
+Levothyroxine,Vitamin C,Low,동시 복용 문제 없음
+Ciprofloxacin,Calcium Citrate,High,퀴놀론 흡수 감소
+Ciprofloxacin,Magnesium,High,흡수 감소
+Ciprofloxacin,Zinc,High,흡수 감소
+Ciprofloxacin,Iron,High,흡수 감소
+Ciprofloxacin,Calcium + Vitamin D,High,흡수 감소
+Ciprofloxacin,Multivitamin (Men),High,흡수 감소
+Sertraline,St. John’s Wort,High,세로토닌 증후군
+Sertraline,5-HTP,High,세로토닌 증후군
+Sertraline,L-Theanine,Low,불안 완화 시너지
+Sertraline,Ginkgo Biloba,Moderate,출혈 위험 증가
+Sertraline,Magnesium,Low,특이 상호작용 없음
+Sertraline,Omega-3 Fish Oil,Low,우울 개선 시너지
+Fluoxetine,St. John’s Wort,High,세로토닌 증후군
+Fluoxetine,5-HTP,High,세로토닌 과다
+Fluoxetine,Melatonin,Low,수면 보조
+Fluoxetine,L-Theanine,Low,불안 완화
+Fluoxetine,Panax Ginseng,Moderate,흥분 및 불면
+Fluoxetine,Omega-3 Fish Oil,Low,기분 개선 보조
+Methotrexate,Folic Acid,High,항암 효과 감소
+Methotrexate,Vitamin A,High,간독성 상승
+Methotrexate,Vitamin D3,Moderate,칼슘 대사 혼란
+Methotrexate,Probiotics,Low,장내 문제 감소
+Methotrexate,Glutathione,Low,산화 스트레스 완화
+Prednisone,Calcium + Vitamin D,Moderate,골다공증 예방
+Prednisone,Omega-3 Fish Oil,Low,염증 완화
+Prednisone,Probiotics,Low,위장 보호
+Prednisone,Vitamin C,Low,면역 억제 보조
+Prednisone,Vitamin D3,Low,골밀도 보조
